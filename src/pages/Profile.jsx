@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 const Profile = () => {
   const [data, setData] = useState(null);
@@ -18,6 +18,7 @@ const Profile = () => {
   }, []);
   return (
     <div>
+      <Link to="/">Home</Link>
       <h1>Profile</h1>
       <h2>User ID: {params.id}</h2>
     </div>
